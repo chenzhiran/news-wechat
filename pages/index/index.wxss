@@ -1,0 +1,139 @@
+/**index.wxss**/
+.content-list {
+  display:flex;
+  height:90rpx;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 10;
+  color: white;
+  background-color: #54A5E2;  
+}
+.content-item {
+  display:flex;
+  height:90rpx;
+  width: 110rpx;
+  font-size: 32rpx;
+  line-height: 90rpx;
+  flex-shrink: 0;
+  flex-direction:column;
+  align-items:center;
+}
+
+.contentItemActive{
+  display:flex;
+  height:85rpx;
+  width: 110rpx;
+  font-size: 40rpx;
+  line-height: 90rpx;
+  flex-shrink: 0;
+  flex-direction:column;
+  align-items:center;
+  border-bottom: 5rpx solid white;
+}
+
+.news-list{
+  margin-top: 90rpx;
+  display:flex;
+  
+}
+
+.news-top{
+  position: relative;  
+  box-sizing: border-box;
+  padding: 20rpx;
+  height: 380rpx;
+  width: 100%;
+}
+
+.news-top-title{
+  flex: left;
+  font-size: 34rpx;
+  position:absolute;
+  color: white;
+  z-index: 1;
+  text-align: justify;
+  height: 86rpx;
+  padding: 20rpx;
+  bottom:80rpx;
+  left:20rpx;
+}
+
+.news-top-source{
+  font-size: 24rpx;
+  position:absolute;
+  padding: 20rpx;
+  color: rgb(199, 194, 194);
+  bottom:10rpx;
+  left:20rpx;
+}
+
+.news-top-date{
+  font-size: 24rpx;
+  position:absolute;
+  padding: 20rpx;
+  color: rgb(199, 194, 194);
+  bottom:10rpx;
+  left:200rpx;
+}
+
+.news-top-image{
+  height:100%;
+  width: 100%; 
+  z-index: -1;
+}
+
+.news-item{
+  position: relative;  
+}
+
+.news-item-wrapper{
+  height: 180rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx;
+  border-bottom: 1px solid rgb(231, 227, 227);
+}
+
+.news-item-left{
+  float: left;
+  height: 140rpx;
+  width: 484rpx;
+  position: relative;  
+}
+
+.news-title{
+  font-size: 34rpx;
+  text-align: justify;
+  height: 86rpx;
+}
+
+.news-source{
+  font-size: 24rpx;
+  position:absolute;
+  color: rgb(199, 194, 194);
+  bottom:10rpx;
+  left:0rpx;
+}
+
+.news-date{
+  font-size: 24rpx;
+  position:absolute;
+  color: rgb(199, 194, 194);
+  bottom:10rpx;
+  left:200rpx;
+}
+
+.news-item-right{
+  float:left;
+  height:140rpx;
+  width:190rpx;
+  margin-left: 20rpx; 
+}
+
+.news-image{
+  height:100%;
+  width: 100%; 
+}
+

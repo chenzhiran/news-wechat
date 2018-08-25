@@ -1,0 +1,27 @@
+<!--index.wxml-->
+
+<view class="content-list">
+    <view wx:for="{{contentItemTitle}}" wx:key="{{item.id}}" data-id="{{item.id}}"class="{{item.id == tab?'contentItemActive':'content-item'}}" bindtap="onContentItemClick">{{item.name}}</view>
+</view>
+
+ <scroll-view class="news-list" style="height:100%" scroll-y="true">
+    <view class="news-top"id="1" catchtap="redictDetail">
+      <view class="news-top-title">{{newsTopTitle}}</view>
+      <view class="news-top-source">{{newsTopSource}}</view>
+      <view class="news-top-date">{{newsTopDate}}</view>
+      <image class="news-top-image" src="{{newsTopImage}}"></image>
+    </view>
+    <view class="news-item" wx:for="{{newsList}}" data-id="{{item.id}}" bindtap="onNewsItemClick">
+      <view class="news-item-wrapper">
+        <view class="news-item-left">
+          <view class="news-title">{{item.newsTitle}}</view>
+          <view class="news-source">{{item.newsSource}}</view>
+          <view class="news-date">{{item.newsDate}}</view>
+        </view>
+        <view class="news-item-right">
+          <image class="news-image" src="{{item.newsImage}}"></image>
+        </view>   
+      </view>        
+    </view>
+</scroll-view>
+
