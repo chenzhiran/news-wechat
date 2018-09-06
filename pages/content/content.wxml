@@ -1,0 +1,15 @@
+<scroll-view class="news-detail" style="height:100%" scroll-y="true">
+    <view class="news-detail-wrapper">
+      <view class="news-detail-title">{{newsDetailTitle}}</view>
+      <view class="news-detail-source">{{newsDetailSource}}</view>
+      <view class="news-detail-date">{{newsDetailDate}}</view>
+      <view class="news-detail-reader">{{newsDetailReader}}</view>
+    </view>
+
+    <image class="first-image" src="{{newsDetailFirstImage}}"></image>
+    <view class="news-detail-content" wx:for="{{newsContent}}" data-id="{{item.contentId}}">
+      <view>{{item.contentText}}</view>
+    </view>
+
+
+</scroll-view>

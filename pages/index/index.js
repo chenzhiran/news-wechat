@@ -39,13 +39,12 @@ Page({
   onNewsItemClick:function(e){
     //console.log(e)
     let clickId = e.currentTarget.dataset.id
-    console.log(clickId)
+    //console.log(clickId)
     
+    //跳转
     wx.navigateTo({
       url: '/pages/content/content?clickId=' + this.data.clickId,
     })
-    
-    
   },
 
 
